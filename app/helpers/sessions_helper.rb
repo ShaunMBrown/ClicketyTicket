@@ -2,6 +2,7 @@ module SessionsHelper
   
   def log_in(user)
     session[:user_id] = user.id
+    @current_event_id = 1
   end
   
   def current_user
